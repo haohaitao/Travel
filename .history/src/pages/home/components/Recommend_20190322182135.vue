@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="title"><span class="iconfont hot">&#xe727;&nbsp;</span>热销推荐</div>
+    <div class="title">热销推荐</div>
     <ul>
         <li class="item border-bottom"  v-for="item of recommenrList" :key="item.id">
           <img class="item-img" :src="item.imgUrl" />
@@ -69,8 +69,6 @@ export default {
     line-height : .8rem
     background: #eeeeee
     text-indent: .2rem
-    .hot
-      color: red
   .item
     overflow: hidden
     display: flex
@@ -82,7 +80,7 @@ export default {
     .item-info
       flex: 1
       padding: .1rem
-      min-width: 0
+     
       .item-title
         padding: .16rem
         height: .44rem

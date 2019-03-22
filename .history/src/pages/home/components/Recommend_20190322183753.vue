@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="title"><span class="iconfont hot">&#xe727;&nbsp;</span>热销推荐</div>
+    <div class="title"><span class="iconfont hot">&#xe727;</span>热销推荐</div>
     <ul>
         <li class="item border-bottom"  v-for="item of recommenrList" :key="item.id">
           <img class="item-img" :src="item.imgUrl" />
