@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  var hht = new Array();
+  var num = [12, 554, 34, 43, 45, 21, 3, 4]
+  function test(num) {
+    for (var i=0; i<num.length; i++){
+      if (hht.indexOf(num[i])==-1){
+        hht.push(num[i])
+      }
+      console.log(hht.sort(sortNumber))
+    }
+  }
+  function sortNumber(a,b)
+  {
+    return a - b
+  }
+</script>
+</body>
+</html>

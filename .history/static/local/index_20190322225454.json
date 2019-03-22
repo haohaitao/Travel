@@ -1,0 +1,140 @@
+{
+  "ret": true,
+  "data": {
+    "city": "北京",
+    "swiperList": [
+      {
+        "id": "0001",
+        "imgUrl": "http://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20193/2f5f3ea4698c9b7898db7562d89b91ed.jpg_750x200_bd3b4ce9.jpg"
+      },
+      {
+        "id": "0002",
+        "imgUrl": "http://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20192/9f73976e40c4ef845cabe0efc0269ebb.jpg_750x200_aab92b7a.jpg"
+      },
+      {
+        "id": "0003",
+        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1804/13/e1188b0d0f21b902.jpg_750x200_f85c782a.jpg"
+      },
+      {
+        "id": "0004",
+        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1711/b5/4b2278b83092cb02.jpg_750x200_9a01c2af.jpg"
+      }
+    ],
+    "iconList": [
+      {
+        "id": "0001",
+        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png",
+        "desc": "景点门票"
+      },
+      {
+        "id": "0002",
+        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1804/5a/13ceb38dcf262f02.png",
+        "desc": "一日游"
+      },
+      {
+        "id": "0003",
+        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1804/ff/fdf170ee89594b02.png",
+        "desc": "郑州必游"
+      },
+      {
+        "id": "0004",
+        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1803/95/8246f27355943202.png",
+        "desc": "郑州方特"
+      },
+      {
+        "id": "0005",
+        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1803/bd/9f7b9b2b60c1502.png",
+        "desc": "踏青赏花"
+      },
+      {
+        "id": "0006",
+        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1803/ab/6f7d6e44963c9302.png",
+        "desc": "泡温泉"
+      },
+      {
+        "id": "0007",
+        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1803/76/eb88861d78fb9902.png",
+        "desc": "动植物园"
+      },
+      {
+        "id": "0008",
+        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1803/50/26ffa31b56646402.png",
+        "desc": "亲子游"
+      },
+      {
+        "id": "0009",
+        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1803/50/26ffa31b56646402.png",
+        "desc": "亲子游"
+      }
+    ],
+    "recommendList": [
+      {
+        "id": "0001",
+        "imgUrl": "http://img1.qunarzz.com/sight/p0/1710/37/37da055bc2d39755a3.img.jpg_200x200_aec295f8.jpg",
+        "title": "郑州方特欢乐世界",
+        "desc": "这是一场盛大的欢乐盛宴！这是一个充满神奇的梦幻乐园！这是一个未来科幻的探险王国！梦幻奇妙的世界，等待你探秘！",
+        "price": "260"
+      },
+      {
+        "id": "0002",
+        "imgUrl": "http://img1.qunarzz.com/sight/p0/1702/f3/f3406639b8e12c6ba3.img.jpg_200x200_8b6b1f2f.jpg",
+        "title": "郑州方特梦幻王国",
+        "desc": "要欢乐，去方特！欢迎加入方特梦幻之旅！",
+        "price": "240"
+      },
+      {
+        "id": "0003",
+        "imgUrl": "http://img1.qunarzz.com/sight/p0/201309/12/317f9a83c526f54ac8d65eac.jpg_200x200_47220a8b.jpg",
+        "title": "古柏渡飞黄风景区",
+        "desc": "千年来孤柏嘴作为黄河的渡口，等待着来往匆匆的路人，而今峰回路转，历史给予了他新的使命——国家南水北调中线总干渠上最关键的建筑——穿黄工程就横亘在这里！",
+        "price": "170"
+      },
+      {
+        "id": "0004",
+        "imgUrl": "http://img1.qunarzz.com/sight/p0/1811/6c/6cbe2a1a22e6bab2a3.img.jpg_200x200_365f258b.jpg",
+        "title": "竹林长寿山景区",
+        "desc": "长寿山景区不仅生态环境优美而且旅游资源丰富，望舅台、笔架山、桃树沟、杏树岭、福龙寿龟、千年古橿、三星宫，是远离喧嚣、回归自然、放飞心情、陶冶情操的休闲乐园。",
+        "price": "29.9"
+      },
+      {
+        "id": "0005",
+        "imgUrl": "http://img1.qunarzz.com/sight/p0/1411/aa/a0c7a3078756924c568bf75489309c3f.water.jpg_200x200_28d12c88.jpg",
+        "title": "雁鸣湖凌云温泉",
+        "desc": "在这里，人与自然和谐共处，阳光与微笑，绿色心情与您同在。让凌云放飞您的心情！",
+        "price": "88"
+      }
+    ],
+    "weekendList": [
+      {
+      "id": "0001",
+      "imgUrl": "http://img1.qunarzz.com/sight/source/1505/86/57819390ea997c.jpg_r_640x214_00888590.jpg",
+      "title": "郑州打卡",
+      "desc": "日月轮回，孕育出新的美丽"
+      },
+      {
+      "id": "0002",
+      "imgUrl": "http: //img1.qunarzz.com/sight/source/1811/d2/017059dd59b0ee.jpg_r_640x214_497664a4.jpg",
+      "title": "城中碧玉万仙山",
+      "desc": "清幽山乡，人间仙境，世外桃源，雄壮而苍茫的红崖绝壁，妙曼而秀雅的山乡风韵，太行风光的典型代表"
+      },
+      {
+      "id": "0003",
+      "imgUrl": "http: //img1.qunarzz.com/sight/source/1603/eb/7f570846b929d8.jpg_r_640x214_7caca563.jpg",
+      "title": "本地人最爱玩",
+      "desc": "洛阳牡丹，美艳群芳"
+      },
+      {
+      "id": "0004",
+      "imgUrl": "http: //img1.qunarzz.com/sight/source/1505/ac/4c5317165807.jpg_r_640x214_f7431b62.jpg",
+      "title": "发现周末好玩",
+      "desc": "周末，想去哪儿就去哪儿"
+      },
+      {
+      "id": "0005",
+      "imgUrl": "http: //img1.qunarzz.com/sight/source/1811/2c/e5e2b086fc0c60.jpg_r_640x214_811a2da7.jpg",
+      "title": "石刻艺术宝库",
+      "desc": "这里是中国石刻艺术宝库，石窟的规模大、艺术精湛，石刻艺术奇葩，是石刻艺术的典范之作。"
+      }
+    ]
+  }
+}
