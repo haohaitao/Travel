@@ -8,39 +8,38 @@
 
 <script>
 export default {
-  name: 'Header'
+  name: 'HomeHeader'
 }
 </script>
 
 <style lang="stylus" scoped>
   @import '~styles/varibles.styl'
   .header
-    display:flex;
-    line-height:.86rem;
-    background :$bgColor;
-    color : #fff;
+    display:flex
+    line-height:.86rem
+    background :$bgColor
+    color : #fff
     .header-left
-      float:left;
-      width: .64rem;
+      float:left
+      width: .64rem
       .back-iconfont
-        text-align: center;
-        font-size: .65rem;
+        text-align: center
+        font-size: .65rem
     .header-input
       flex:1;
-      height:.64rem;
-      margin-top: .12rem;
-      margin-left: .2rem;
-      background: #fff;
-      color:#ccc;
-      height:.64rem;
-      line-height:.64rem;
-      padding-left:.2rem;
-      border-radius: .1rem;
+      margin-top: .12rem
+      margin-left: .2rem
+      background: #fff
+      color:#ccc
+      height:.64rem
+      line-height:.64rem
+      padding-left:.2rem
+      border-radius: .1rem
     .header-right
-      float:right;
-      width: 1.24rem;
-      text-align: center;
+      float:right
+      width: 1.24rem
+      text-align: center
       .arrow-iconfont
-        margin-left:.1rem;
+        margin-left:.1rem
         font-size:.24rem
 </style>
