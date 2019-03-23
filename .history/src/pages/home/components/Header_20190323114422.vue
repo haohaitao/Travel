@@ -21,7 +21,7 @@ export default {
   props: {
     city: String
   }
-}
+};
 </script>
 
 <style lang="stylus" scoped>
@@ -29,7 +29,7 @@ export default {
 
 .header
   display: flex
-  line-height: $headerHeight
+  line-height: 0.86rem
   background: $bgColor
   color: #fff
   .header-left
@@ -53,7 +53,7 @@ export default {
     width: 1.24rem
     text-align: center
     color: #ffffff
-    .arrow-iconfont
+    .arrow-iconfont 
       margin-left: 0.1rem
       font-size: 0.24rem
 </style>
