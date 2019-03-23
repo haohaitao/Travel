@@ -3,6 +3,7 @@
      <city-header></city-header>
      <city-search></city-search>
   </div>
+     
 </template>
 
 <script>
