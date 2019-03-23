@@ -2,8 +2,8 @@
   <div>
      <city-header></city-header>
      <city-search></city-search>
-     <city-list :cities="cities" :hot="hotCities"></city-list>
-     <city-alphabel :cities="cities"></city-alphabel>
+     <city-list></city-list>
+     <city-alphabel></city-alphabel>
   </div>
 </template>
 
@@ -15,12 +15,6 @@ import CityAlphabel from './components/Alphabel'
 import axios from 'axios'
 export default{
   name: 'City',
-  data () {
-    return {
-      cities: {},
-      hotCities: []
-    }
-  },
   components: {
     CityHeader,
     CitySearch,
@@ -28,16 +22,19 @@ export default{
     CityAlphabel
   },
   methods: {
-    getCityInfo () {
+    getHomeInfo () {
       axios.get('/api/city.json')
-        .then(this.handleGetCityInfoSucc)
+        .then(this.getCityInfo)
     },
-    handleGetCityInfoSucc (res) {
+    getCityInfoSucc (res) {
       res = res.data
       if (res.ret && res.data) {
         const data = res.data
-        this.cities = data.cities
-        this.hotCities = data.hotCities
+        this.city = data.city
+        this.swiperList = data.swiperList
+        this.iconList = data.iconList
+        this.recommendList = data.recommendList
+        this.weekendList = data.weekendList
       }
     }
   },
