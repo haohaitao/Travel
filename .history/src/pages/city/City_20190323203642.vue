@@ -3,7 +3,6 @@
      <city-header></city-header>
      <city-search></city-search>
      <city-list></city-list>
-     <city-alphabel></city-alphabel>
   </div>
 </template>
 
@@ -17,8 +16,7 @@ export default{
   components: {
     CityHeader,
     CitySearch,
-    CityList,
-    CityAlphabel
+    CityList
   }
 }
 </script>
