@@ -9,8 +9,8 @@
           <p class="icon-desc">{{ item.desc }}</p>
         </div>
       </swiper-slide>
-      <div class="swiper-pagination"  slot="pagination"></div>
     </swiper>
+    <p class="swiper-pagination"  slot="pagination"></p>
  </div>
 </template>
 
@@ -109,8 +109,6 @@ export default {
     .icons >>> .swiper-container
       height: 0
       padding-bottom: 50%
-    .icons >>> .swiper-container-horizontal > .swiper-pagination-bullets
-      bottom: -2px
     .icons
       margin-top: .1rem
       .icon

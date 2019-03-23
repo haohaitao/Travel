@@ -111,6 +111,8 @@ export default {
       padding-bottom: 50%
     .icons >>> .swiper-container-horizontal > .swiper-pagination-bullets
       bottom: -2px
+    .icons >>> .swiper-pagination-bullet
+      background: #ffffff 
     .icons
       margin-top: .1rem
       .icon
