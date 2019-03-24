@@ -6,7 +6,7 @@
     <div class="search-content"  v-show="keyword" ref="search">
       <ul>
         <li class="search-item border-bottom" v-for="item of list" :key="item.id">{{item.name}}</li>
-        <li class="search-item border-bottom" v-show="hasNoData">没有找到匹配数据！</li>
+        <li class="search-item border-bottom" v-show="hasList">没有找到匹配数据！</li>
       </ul>
     </div>
   </div>
@@ -27,7 +27,7 @@ export default {
     }
   },
   computed: {
-    hasNoData () {
+    hasList () {
       return !this.list.length
     }
   },
@@ -38,7 +38,7 @@ export default {
       }
       if (!this.keyword) {
         this.list = []
-        return
+        return  
       }
       this.timer = setTimeout(() => {
         const result = []

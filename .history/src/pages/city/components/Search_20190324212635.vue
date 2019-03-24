@@ -3,10 +3,9 @@
     <div class="search" >
         <input v-model="keyword" class="search-input" type="text" placeholder="输入城市名字或拼音">
     </div>
-    <div class="search-content"  v-show="keyword" ref="search">
+    <div class="search-content"  ref="search">
       <ul>
-        <li class="search-item border-bottom" v-for="item of list" :key="item.id">{{item.name}}</li>
-        <li class="search-item border-bottom" v-show="hasNoData">没有找到匹配数据！</li>
+        <li class="search-item border-bottom" v-for="item of list">{{item.name}}</li>
       </ul>
     </div>
   </div>
@@ -26,29 +25,20 @@ export default {
       timer: null
     }
   },
-  computed: {
-    hasNoData () {
-      return !this.list.length
-    }
-  },
   watch: {
     keyword () {
       if (this.timer) {
         clearTimeout(this.timer)
       }
-      if (!this.keyword) {
-        this.list = []
-        return
-      }
       this.timer = setTimeout(() => {
         const result = []
-        for (let i in this.cities) {
+        for(let i in this.cities) {
           this.cities[i].forEach((value) => {
-            if (value.spell.indexOf(this.keyword) > -1 ||
+            if (value.spell.indexOf(this.keyworld) > -1 || 
                 value.name.indexOf(this.keyword) > -1) {
-              result.push(value)
-            }
-          })
+                  result.push(value)
+                }
+          });
         }
         this.list = result
       }, 100)
