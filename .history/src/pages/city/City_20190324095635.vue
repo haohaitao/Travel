@@ -43,7 +43,7 @@ export default{
     },
     handleLetterChange (letter) {
       this.letter = letter
-    }
+  }
   },
   mounted () {
     this.getCityInfo()

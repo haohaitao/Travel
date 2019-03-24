@@ -47,7 +47,6 @@ export default {
     },
     handleTouchMove (e) {
       if (this.touchStatus) {
-        // this.timer为函数节流方法
         if (this.timer) {
           clearTimeout(this.timer)
         }
@@ -56,8 +55,8 @@ export default {
           const index = Math.floor((touchY - this.startY) / 20) // Math.floor取每个字母的最小整数（字母距离上框的距离）
           if (index >= 0 && index < this.letters.length) {
             this.$emit('change', this.letters[index])
-          }
-        }, 16)
+        }
+          }, 16)       
       }
     },
     handleTouchEnd () {

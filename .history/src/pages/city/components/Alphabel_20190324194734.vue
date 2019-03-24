@@ -47,7 +47,6 @@ export default {
     },
     handleTouchMove (e) {
       if (this.touchStatus) {
-        // this.timer为函数节流方法
         if (this.timer) {
           clearTimeout(this.timer)
         }
