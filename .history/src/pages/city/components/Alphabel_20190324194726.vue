@@ -47,7 +47,6 @@ export default {
     },
     handleTouchMove (e) {
       if (this.touchStatus) {
-        // this.timer为函数节流方法
         if (this.timer) {
           clearTimeout(this.timer)
         }
@@ -57,7 +56,7 @@ export default {
           if (index >= 0 && index < this.letters.length) {
             this.$emit('change', this.letters[index])
           }
-        }, 16)
+        }, 16)       
       }
     },
     handleTouchEnd () {

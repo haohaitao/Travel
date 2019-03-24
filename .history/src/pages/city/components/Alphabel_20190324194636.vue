@@ -47,17 +47,17 @@ export default {
     },
     handleTouchMove (e) {
       if (this.touchStatus) {
-        // this.timer为函数节流方法
         if (this.timer) {
           clearTimeout(this.timer)
         }
         this.timer = setTimeout(() => {
           const touchY = e.touches[0].clientY - 79 // 79是上边框距离字母A的举例
           const index = Math.floor((touchY - this.startY) / 20) // Math.floor取每个字母的最小整数（字母距离上框的距离）
-          if (index >= 0 && index < this.letters.length) {
-            this.$emit('change', this.letters[index])
-          }
-        }, 16)
+        if (index >= 0 && index < this.letters.length) {
+          this.$emit('change', this.letters[index])
+        }
+        },16)
+        
       }
     },
     handleTouchEnd () {

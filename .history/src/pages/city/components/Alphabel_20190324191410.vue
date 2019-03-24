@@ -1,6 +1,6 @@
 <template>
   <ul class="list">
-    <li class="item" v-for="item of letters"
+    <li class="item" v-for="item of letters" 
                      :key="item"
                      :ref="item"
                      @touchstart="handleTouchStart"
@@ -8,7 +8,7 @@
                      @touchend="handleTouchEnd"
                      @click="handleLetterClick"
     >
-    {{item}}
+    {{key}}
     </li>
   </ul>
 </template>
@@ -23,20 +23,15 @@ export default {
     letters () {
       const letters = []
       for (let i in this.cities) {
-        letters.push(i)
+        letter.push(i)
       }
       return letters
     }
   },
   data () {
     return {
-      touchStatus: false,
-      startY: 0,
-      timer: null
+      touchStatus: false
     }
-  },
-  updated () {
-    this.startY = this.$refs['A'][0].offsetTop // 指 this.$refs['A'][0]距离上方或上层控件的位置，整型，单位像素
   },
   methods: {
     handleLetterClick (e) {
@@ -45,23 +40,14 @@ export default {
     handleTouchStart () {
       this.touchStatus = true
     },
-    handleTouchMove (e) {
-      if (this.touchStatus) {
-        // this.timer为函数节流方法
-        if (this.timer) {
-          clearTimeout(this.timer)
-        }
-        this.timer = setTimeout(() => {
-          const touchY = e.touches[0].clientY - 79 // 79是上边框距离字母A的举例
-          const index = Math.floor((touchY - this.startY) / 20) // Math.floor取每个字母的最小整数（字母距离上框的距离）
-          if (index >= 0 && index < this.letters.length) {
-            this.$emit('change', this.letters[index])
-          }
-        }, 16)
-      }
+    handleTouchMove () {
+      const startY = this.$refs['A'][0].offsetTop
+      const touchY = e.touches[0].clientY - 79
+      const index = Math.floor((touchY - startY) / 20)
+      console.log(touchY)
     },
     handleTouchEnd () {
-      this.touchStatus = false
+
     }
   }
 }
