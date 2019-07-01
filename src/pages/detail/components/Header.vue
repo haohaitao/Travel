@@ -37,7 +37,10 @@ export default {
       }
   },
   activated () {
-      window.addEventListener('scroll', this.handleScroll)
+      window.addEventListener('scroll', this.handleScroll)   //绑定监听
+  },
+  deactivated () {
+      window.removeEventListener('scroll', this.handleScroll)   //解绑，因为window是一个全局对象
   }
 }
 </script>
