@@ -36,9 +36,11 @@ export default {
           }
       }
   },
+  // 进入当前存在activated()函数的页面时，一进入页面就触发；可用于初始化页面
   activated () {
       window.addEventListener('scroll', this.handleScroll)   //绑定监听
   },
+  // deactivated 页面被替换为新的页面时候执行
   deactivated () {
       window.removeEventListener('scroll', this.handleScroll)   //解绑，因为window是一个全局对象
   }
@@ -61,6 +63,7 @@ export default {
       color: #fff
       font-size: .4rem
   .header-fixed
+    z-index: 2
     position: fixed
     top: 0
     left: 0
