@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '@/pages/home/Home'
-import City from '@/pages/city/City'
+import city from '@/pages/city/City'
 import Detail from '@/pages/detail/Detail'
 
 Vue.use(Router)
@@ -10,16 +10,19 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: '首页',
-      component: Home
+      name: 'Home',
+      // component: () => import('@/pages/home/Home')
+      component: Home     
     }, {
       path: '/city',
       name: 'city',
-      component: City
+      // component: () => import('@/pages/city/City')
+      component: city
     },
     {
       path: '/detail/:id',
       name: 'Detail',
+      // component: () => import('@/pages/detail/Detail')
       component: Detail
     }
   ],
