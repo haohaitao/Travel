@@ -1,0 +1,39 @@
+卷 Win7 的文件夹 PATH 列表
+卷序列号为 0009-88C1
+C:.
++---.history
+|   +---config
+|   +---src
+|   |   +---assets
+|   |   |   \---styles
+|   |   +---pages
+|   |   |   +---city
+|   |   |   |   +---component
+|   |   |   |   \---components
+|   |   |   \---home
+|   |   |       \---components
+|   |   +---router
+|   |   \---store
+|   \---static
+|       \---local
++---.idea
++---build
++---config
++---src
+|   +---assets
+|   |   \---styles
+|   |       \---iconfont
+|   +---pages
+|   |   +---city
+|   |   |   \---components
+|   |   +---detail
+|   |   |   \---components
+|   |   \---home
+|   |       \---components
+|   +---public
+|   |   +---fade
+|   |   \---gallary
+|   +---router
+|   \---store
+\---static
+    \---local
