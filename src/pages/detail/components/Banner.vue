@@ -10,12 +10,15 @@
       <div class="banner-title">{{this.sightName}}</div>
   </div>
   </div>
+  <fade-animation>
     <public-gallary :imgs="gallaryImgs" v-show="showGallary" @close="handleGallaryClose"></public-gallary>
-</div>
+  </fade-animation>
+  </div>
 </template>
 
 <script>
 import PublicGallary from '@/public/gallary/Gallary'
+import FadeAnimation from '@/public/fade/Fade'
 export default {
   name: 'DetailBanner',
   props: {
@@ -37,7 +40,8 @@ export default {
     }
   },
   components: {
-    PublicGallary
+    PublicGallary,
+    FadeAnimation
   }
 }
 </script>
